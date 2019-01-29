@@ -5,7 +5,7 @@ ack:
   enabled: false
 formats:
   - keel trigger {{ image }}:{{ tag }}
----
+--
 name: approve
 description:
 action_ref: keel.approve
@@ -16,7 +16,7 @@ formats:
 parameters:
   action: approve
   voter: hubot
----
+--
 name: reject
 description:
 action_ref: keel.approve
@@ -27,7 +27,7 @@ formats:
 parameters:
   action: reject
   voter: hubot
----
+--
 name: delete
 description:
 action_ref: keel.approve
