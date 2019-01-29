@@ -7,7 +7,7 @@ st2 run keel.trigger.image image=test tag=1.1.1
 # deploy
 ggg .
 st2 pack install --force file:///makeomatic/stackstorm-keel
-st2ctl reload
+service st2chatops restart
 
 
 # debug
