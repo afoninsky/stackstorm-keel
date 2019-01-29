@@ -1,0 +1,35 @@
+name: approve
+runner_type: http-request
+description: Approve image for update
+enabled: true
+parameters:
+  headers:
+    type: object
+    default:
+      content-type: application/json
+    immutable: true
+  timeout:
+    type: integer
+    default: 10
+    immutable: true
+  method:
+    type: string
+    default: POST
+    immutable: true
+  url:
+    type: string
+    default: {{ host }}/v1/webhooks/native
+    immutable: true
+  params:
+    type: object
+    required: true
+    properties:
+      name:
+        type: string
+        default: gcr.io/v2-namespace/hello-world
+      tag:
+        type: string
+        default: "1.1.1"
+  host:
+    type: string
+    required: true

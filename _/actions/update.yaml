@@ -1,0 +1,12 @@
+name: approve
+pack: keel
+runner_type: "local-shell-script"
+description: Trigger image update manually
+enabled: true
+entry_point: approve.sh
+parameters:
+    image:
+        type: string
+        description: Image for update
+        required: true
+        position: 1

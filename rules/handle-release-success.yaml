@@ -1,0 +1,17 @@
+# handle successful release notification from the hook
+name: deploy-success
+description: Notify chatops about successful keel deploy
+enabled: true
+trigger:
+  type: core.st2.webhook
+  parameters:
+    url: keel
+criteria:
+  trigger.body.level:
+    type: equals
+    pattern: LevelSuccess
+action:
+  ref: chatops.post_message
+  parameters:
+    message: "{{trigger.name}}: {{trigger.body.message}}"
+    channel: "#builds"

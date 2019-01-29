@@ -1,0 +1,13 @@
+# https://docs.stackstorm.com/reference/runners.html#http-runner-http-request
+name: approve
+pack: keel
+runner_type: http-request
+description: Approve image for update
+enabled: true
+url: ???
+# parameters:
+#     image:
+#         type: string
+#         description: Image for approve
+#         required: true
+#         position: 1

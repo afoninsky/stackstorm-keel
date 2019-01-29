@@ -1,0 +1,12 @@
+name: reject
+pack: keel
+runner_type: "local-shell-script"
+description: Reject image for update
+enabled: true
+entry_point: approve.sh
+parameters:
+    image:
+        type: string
+        description: Image for reject
+        required: true
+        position: 1

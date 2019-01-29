@@ -1,0 +1,6 @@
+name: update
+pack: keel
+description: Trigger image update manually
+action_ref: keel.update
+formats:
+  - keel update {{image}}

@@ -1,0 +1,6 @@
+name: approvals.get
+pack: keel
+runner_type: "local-shell-script"
+description: List pending approvals
+enabled: true
+entry_point: approve.sh
