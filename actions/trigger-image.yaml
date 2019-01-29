@@ -1,6 +1,6 @@
-name: approve
+name: trigger.image
 runner_type: http-request
-description: Approve image for update
+description: "Trigger event of image update (ex.: manual deploy)"
 enabled: true
 parameters:
   headers:

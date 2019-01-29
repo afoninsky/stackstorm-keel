@@ -1,6 +1,6 @@
 name: approve
 pack: keel
-description: Approve image for update
-action_ref: keel.approve
+description: Manually trigger event of updating image
+action_ref: keel.trigger.image
 formats:
-  - keel approve {{ name }}:{{ tag }}
+  - keel trigger {{ name }}:{{ tag }}

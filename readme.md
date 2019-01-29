@@ -16,6 +16,8 @@ st2 run keel.approve host=http://localhost:65000 name=test tag=1.1.1
 
 # deploy
 ggg .
+st2 pack install --force file:///makeomatic/stackstorm-keel
+st2ctl reload
 
 
 ### TODO
