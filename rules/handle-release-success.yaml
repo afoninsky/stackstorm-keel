@@ -13,5 +13,6 @@ criteria:
 action:
   ref: chatops.post_message
   parameters:
-    message: "{{trigger.name}}: {{trigger.body.message}}"
+    # message: "{{trigger.name}}: {{trigger.body.message}}"
+    message: "Something successfully deployed "
     channel: "#builds"

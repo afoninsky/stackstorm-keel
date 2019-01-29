@@ -1,6 +1,11 @@
 # hooks
-https://{$ST2_IP}/api/v1/webhooks/keel?st2-api-key=xxx
+st2 apikey create -k -m '{"used_by": "keel.sh"}
+curl -k https://localhost/api/v1/webhooks/keel?st2-api-key=OTVlZjUxZGViMTViNmRlN2VkYmY3ZDdjZmYyYzA4ZWM5YzYwZmViOTI5YmM5YmU3ZjYxNjM0NDNlMDY0ZjE1Yg \
+  -H 'Content-Type: application/json' \
+  -d '{"level": "LevelSuccess", "message": "im a hook"}'
+
 https://docs.stackstorm.com/authentication.html#authentication-apikeys
+
 st2 webhook list
 https://docs.stackstorm.com/troubleshooting/webhooks.html
 
@@ -15,4 +20,3 @@ ggg .
 
 ### TODO
 [ ] deal how to inject config values to actions
-[ ] pass {{ image }} as {{ name}}:{{ tag }} in actions
