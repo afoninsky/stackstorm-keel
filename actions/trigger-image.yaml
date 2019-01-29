@@ -24,9 +24,6 @@ parameters:
     type: string
     default: "{\"name\": \"{{ name }}\", \"tag\": \"{{ tag }}\"}"
     immutable: true
-  host:
-    type: string
-    required: true
   name:
     type: string
     required: true
