@@ -1,9 +1,9 @@
-name: approve
-description:
-action_ref: keel.approve
-ack:
-  enabled: false
-formats:
-  - display: keel approve|delete|reject {{ image }}:{{ tag }}
-    representation:
-      - keel {{ action }} {{ image }}:{{ tag }}
+# name: approve
+# description:
+# action_ref: keel.approve
+# ack:
+#   enabled: false
+# formats:
+#   - display: keel approve|delete|reject {{ image }}:{{ tag }}
+#     representation:
+#       - keel {{ action }} {{ image }}:{{ tag }}
