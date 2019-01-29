@@ -11,5 +11,5 @@ result:
 
     {% for item in execution.result.body -%}
       {{item.message}} ({{ item.votesRequired }} votes required)
-      `keel approve|reject|delete {{ item.identified }}
+      `keel approve|reject|delete {{ item.identified }}`
     {%+ endfor %}
