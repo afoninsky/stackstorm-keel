@@ -1,21 +1,4 @@
 # https://keel.sh/v1/guide/documentation.html#Webhook-notifications
-name: deploy-success
-description: Notify chatops about success on keel deploy
-enabled: true
-trigger:
-  type: core.st2.webhook
-  parameters:
-    url: keel
-criteria:
-  trigger.body.level:
-    type: equals
-    pattern: LevelSuccess
-action:
-  ref: chatops.post_message
-  parameters:
-    message: "keel - {{ trigger.body.message }}"
-    channel: "{{ config_context.notification_channel }}"
----
 name: deploy-fail
 description: Notify chatops about fail on keel deploy
 enabled: true
