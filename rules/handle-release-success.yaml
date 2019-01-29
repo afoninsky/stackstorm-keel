@@ -10,13 +10,8 @@ criteria:
   trigger.body.level:
     type: equals
     pattern: LevelSuccess
-# action:
-#   ref: chatops.post_message
-#   parameters:
-#     # message: "{{trigger.name}}: {{trigger.body.message}}"
-#     message: "Something successfully deployed "
-#     channel: "#builds"
 action:
-  ref: core.local
+  ref: chatops.post_message
   parameters:
-    cmd: echo "{{trigger}}" >> /tmp/st2.webhook-sample.out
+    message: "{{ trigger.body.message }}"
+    channel: "#builds"
