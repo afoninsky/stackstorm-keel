@@ -18,7 +18,7 @@ parameters:
     immutable: true
   url:
     type: string
-    default: "{{ host }}/v1/webhooks/native"
+    default: "{{ config_context.host }}/v1/webhooks/native"
     immutable: true
   body:
     type: string

@@ -6,4 +6,5 @@ host:
 notification_channel:
   description: Default channel for keel notifications
   type: string
+  default: "#builds"
   required: true

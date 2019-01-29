@@ -13,5 +13,5 @@ criteria:
 action:
   ref: chatops.post_message
   parameters:
-    message: "{{ trigger.body.message }}"
-    channel: "#builds"
+    message: "keel - {{ trigger.body.message }}"
+    channel: "{{ config_context.notification_channel }}"
