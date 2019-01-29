@@ -34,7 +34,9 @@ parameters:
   action:
     type: string
     required: true
+    default: approve
     enum: ["approve", "reject", "delete"]
   voter:
     type: string
     required: true
+    default: "{{ action_context.api_user }}"

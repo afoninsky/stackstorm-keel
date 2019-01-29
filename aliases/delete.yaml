@@ -5,6 +5,3 @@ ack:
   enabled: false
 formats:
   - keel delete {{ image }}:{{ tag }}
-parameters:
-  action: delete
-  voter: hubot
