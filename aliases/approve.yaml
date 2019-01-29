@@ -3,4 +3,4 @@ pack: keel
 description: Approve image for update
 action_ref: keel.approve
 formats:
-  - keel approve {{ image }}
+  - keel approve {{ name }}:{{ tag }}
