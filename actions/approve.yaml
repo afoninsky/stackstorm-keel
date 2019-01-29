@@ -6,7 +6,7 @@ parameters:
   headers:
     type: object
     default:
-      content-type: application/json
+      Content-Type: application/json
     immutable: true
   timeout:
     type: integer
@@ -20,16 +20,16 @@ parameters:
     type: string
     default: "{{ host }}/v1/webhooks/native"
     immutable: true
-  params:
-    type: object
-    required: true
-    properties:
-      name:
-        type: string
-        default: gcr.io/v2-namespace/hello-world
-      tag:
-        type: string
-        default: "1.1.1"
+  body:
+    type: string
+    default: "{\"name\": \"{{ name }}\", \"tag\": \"{{ tag }}\"}"
+    immutable: true
   host:
+    type: string
+    required: true
+  name:
+    type: string
+    required: true
+  tag:
     type: string
     required: true
