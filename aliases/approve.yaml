@@ -1,0 +1,10 @@
+name: approve
+description:
+action_ref: keel.approve
+ack:
+  enabled: false
+formats:
+  - keel approve {{ image }}:{{ tag }}
+parameters:
+  action: approve
+  voter: hubot

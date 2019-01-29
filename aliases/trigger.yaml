@@ -1,0 +1,7 @@
+name: trigger
+description: Manually trigger event of updating image
+action_ref: keel.trigger.image
+ack:
+  enabled: false
+formats:
+  - keel trigger {{ image }}:{{ tag }}

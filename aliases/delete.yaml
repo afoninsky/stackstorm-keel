@@ -1,0 +1,10 @@
+name: delete
+description:
+action_ref: keel.approve
+ack:
+  enabled: false
+formats:
+  - keel delete {{ image }}:{{ tag }}
+parameters:
+  action: delete
+  voter: hubot
