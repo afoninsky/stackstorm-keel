@@ -1,6 +1,0 @@
-name: reject
-pack: keel
-description: Reject image for update
-action_ref: keel.reject
-formats:
-  - keel reject {{image}}

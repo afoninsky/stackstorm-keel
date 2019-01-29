@@ -1,6 +1,0 @@
-name: approve
-pack: keel
-description: Manually trigger event of updating image
-action_ref: keel.trigger.image
-formats:
-  - keel trigger {{ name }}:{{ tag }}

@@ -1,7 +1,7 @@
-# https://keel.sh/v1/guide/documentation.html#Webhooks
-name: trigger.image
+# https://keel.sh/v1/guide/documentation.html#Managing-approvals-through-HTTP-endpoint
+name: approve
 runner_type: http-request
-description: "Trigger event of image update (ex.: manual deploy)"
+description: Approve (or reject) image for update
 enabled: true
 parameters:
   headers:
@@ -19,15 +19,22 @@ parameters:
     immutable: true
   url:
     type: string
-    default: "{{ config_context.host }}/v1/webhooks/native"
+    default: "{{ config_context.host }}/v1/approvals"
     immutable: true
   body:
     type: string
-    default: "{\"name\": \"{{ image }}\", \"tag\": \"{{ tag }}\"}"
+    default: "{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"{{ action }}\", \"voter\":\{{ voter }}"\"}"
     immutable: true
   image:
     type: string
     required: true
   tag:
+    type: string
+    required: true
+  action:
+    type: string
+    required: true
+    enum: ["approve", "reject", "delete"]
+  voter:
     type: string
     required: true

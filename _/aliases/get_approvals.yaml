@@ -1,6 +1,0 @@
-name: get_approvals
-pack: keel
-description: List pending approvals
-action_ref: keel.approvals.get
-formats:
-  - keel get approvals
