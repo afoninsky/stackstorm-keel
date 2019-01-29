@@ -1,7 +1,7 @@
 # https://keel.sh/v1/guide/documentation.html#Managing-approvals-through-HTTP-endpoint
-name: approve
+name: delete
 runner_type: http-request
-description: Approve  image for update
+description: Delete approval of the image
 enabled: true
 parameters:
   headers:
@@ -23,7 +23,7 @@ parameters:
     immutable: true
   body:
     type: string
-    default: '{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"approve\", \"voter\":\{{ voter }}"\"}'
+    default: '{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"delete\", \"voter\":\{{ voter }}"\"}'
     immutable: true
   image:
     type: string

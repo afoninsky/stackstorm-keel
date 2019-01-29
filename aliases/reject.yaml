@@ -1,0 +1,7 @@
+name: reject
+description:
+action_ref: keel.reject
+ack:
+  enabled: false
+formats:
+  - keel reject {{ image }}:{{ tag }}

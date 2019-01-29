@@ -1,0 +1,7 @@
+name: delete
+description:
+action_ref: keel.delete
+ack:
+  enabled: false
+formats:
+  - keel delete {{ image }}:{{ tag }}
