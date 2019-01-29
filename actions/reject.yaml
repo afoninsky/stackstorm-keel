@@ -27,7 +27,7 @@ parameters:
     immutable: true
   voter:
     type: string
-    default: hubot
+    default: "{{ action_context.api_user or 'hubot' }}"
     immutable: true
   image:
     type: string
