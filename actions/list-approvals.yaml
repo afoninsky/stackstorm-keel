@@ -1,0 +1,23 @@
+name: list.approvals
+runner_type: http-request
+description: List all pending approvals
+enabled: true
+parameters:
+  headers:
+    type: object
+    default:
+      Content-Type: application/json
+    immutable: true
+  timeout:
+    type: integer
+    default: 10
+    immutable: true
+  method:
+    type: string
+    default: GET
+    immutable: true
+  url:
+    type: string
+    # default: "{{ config_context.host }}/v1/approvals"
+    default: http://www.mocky.io/v2/5c506f3e34000012001298af
+    immutable: true
