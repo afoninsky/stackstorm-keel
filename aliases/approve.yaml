@@ -4,4 +4,6 @@ action_ref: keel.approve
 ack:
   enabled: false
 formats:
-  - keel approve {{ image }}:{{ tag }}
+  - display: keel approve|delete|reject {{ image }}:{{ tag }}
+    representation:
+      - keel {{ action }} {{ image }}:{{ tag }}
