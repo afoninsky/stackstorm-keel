@@ -10,8 +10,7 @@ st2 webhook list
 https://docs.stackstorm.com/troubleshooting/webhooks.html
 
 # actions
-https://docs.stackstorm.com/reference/runners.html#http-runner-http-request
-st2 run keel.trigger.image name=test tag=1.1.1
+st2 run keel.trigger.image image=test tag=1.1.1
 
 # deploy
 ggg .

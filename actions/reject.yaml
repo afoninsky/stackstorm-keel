@@ -33,5 +33,4 @@ parameters:
     required: true
   voter:
     type: string
-    required: true
-    default: "{{ action_context.api_user }}"
+    default: hubot
