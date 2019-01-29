@@ -17,7 +17,3 @@ st2 run keel.trigger.image name=test tag=1.1.1
 ggg .
 st2 pack install --force file:///makeomatic/stackstorm-keel
 st2ctl reload
-
-
-### TODO
-[ ] deal how to inject config values to actions

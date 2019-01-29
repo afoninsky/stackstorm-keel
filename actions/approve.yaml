@@ -23,7 +23,7 @@ parameters:
     immutable: true
   body:
     type: string
-    default: "{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"{{ action }}\", \"voter\":\{{ voter }}"\"}"
+    default: '{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"{{ action }}\", \"voter\":\{{ voter }}"\"}'
     immutable: true
   image:
     type: string
