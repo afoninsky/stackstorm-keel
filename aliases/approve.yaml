@@ -1,5 +1,5 @@
 name: approve
-description:
+description: Approve  image for update
 action_ref: keel.approve
 ack:
   enabled: false

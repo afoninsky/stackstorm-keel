@@ -25,12 +25,13 @@ parameters:
     type: string
     default: '{\"identifier\": \"{{ image }}:{{ tag }}\", \"action\": \"reject\", \"voter\":\{{ voter }}"\"}'
     immutable: true
+  voter:
+    type: string
+    default: hubot
+    immutable: true
   image:
     type: string
     required: true
   tag:
     type: string
     required: true
-  voter:
-    type: string
-    default: hubot

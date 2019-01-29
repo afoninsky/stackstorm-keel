@@ -1,5 +1,5 @@
 name: delete
-description:
+description: Delete approval of the image
 action_ref: keel.delete
 ack:
   enabled: false

@@ -1,5 +1,5 @@
 name: reject
-description:
+description: Reject image for update
 action_ref: keel.reject
 ack:
   enabled: false
