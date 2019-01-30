@@ -14,4 +14,4 @@ action:
   ref: chatops.post_message
   parameters:
     message: "keel - {{ trigger.body.message }}"
-    channel: "{{ config_context.notification_channel }}"
+    channel: "{{ trigger.body.channels | first | use_none }}"

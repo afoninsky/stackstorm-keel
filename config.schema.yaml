@@ -3,8 +3,3 @@ host:
   type: string
   default: http://keel.default.svc.cluster.local:9300
   required: true
-notification_channel:
-  description: Default channel for keel notifications
-  type: string
-  default: "#builds"
-  required: true
